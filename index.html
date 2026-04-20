@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aura Cafe - Şehir merkezinde geniş, ferah ve rahat bir ortamda kahve ve tatlı keyfi. Taze kahveler, günlük tatlılar.">
+    <title>Aura Cafe | Rahatça Otur, Kahveni İç</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#anasayfa" class="nav-logo">
+                <img src="logo.png" alt="Aura Cafe Logo" class="logo-img">
+                <span class="logo-text">Aura Cafe</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#menu">Menü</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menü aç/kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="anasayfa">
+        <div class="hero-overlay"></div>
+        <img src="images/hero.png" alt="Aura Cafe iç mekan" class="hero-bg">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                </svg>
+                Şehir Merkezi
+            </div>
+            <h1 class="hero-title">Rahatça oturup<br>kahveni içebileceğin<br>bir yer.</h1>
+            <p class="hero-subtitle">Geniş alan, taze kahve ve günlük tatlılar.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Menüyü Gör</a>
+                <a href="#iletisim" class="btn btn-secondary">Konum</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Aşağı kaydır</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- GÜNÜN ÖNERİSİ -->
+    <section class="daily-pick">
+        <div class="container">
+            <div class="daily-pick-card">
+                <div class="daily-pick-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                </div>
+                <div class="daily-pick-content">
+                    <span class="daily-pick-label">Günün Önerisi</span>
+                    <span class="daily-pick-name">Vanilla Latte</span>
+                </div>
+                <div class="daily-pick-price">105₺</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÖZELLİKLER -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item" data-animate>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                            <line x1="12" y1="20" x2="12.01" y2="20" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <strong>Ücretsiz WiFi</strong>
+                        <span>Hızlı internet</span>
+                    </div>
+                </div>
+                <div class="feature-item" data-animate>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <strong>Geniş Alan</strong>
+                        <span>Ferah ortam</span>
+                    </div>
+                </div>
+                <div class="feature-item" data-animate>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" />
+                            <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4z" />
+                            <path d="M4 18v2" />
+                            <path d="M20 18v2" />
+                            <path d="M12 4v3" />
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <strong>Rahat Oturma</strong>
+                        <span>Konforlu koltuklar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENÜ -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Menü</span>
+                <h2 class="section-title">Kahve & Tatlı</h2>
+                <p class="section-desc">Taze çekilen kahveler ve her gün hazırlanan tatlılar.</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="kahveler" id="tabKahveler">Kahveler</button>
+                <button class="menu-tab" data-tab="tatlilar" id="tabTatlilar">Tatlılar</button>
+            </div>
+
+            <div class="menu-content">
+                <div class="menu-grid active" id="kahveler">
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-espresso.png" alt="Espresso" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Espresso</h3>
+                            <p>Yoğun ve sert, klasik İtalyan espresso.</p>
+                        </div>
+                        <div class="menu-card-price">80₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-latte.png" alt="Latte" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Latte</h3>
+                            <p>Yumuşak süt köpüğüyle espresso.</p>
+                        </div>
+                        <div class="menu-card-price">95₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-cappuccino.png" alt="Cappuccino" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Cappuccino</h3>
+                            <p>Bol köpüklü, dengeli kahve.</p>
+                        </div>
+                        <div class="menu-card-price">100₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-vanilla-latte.png" alt="Vanilla Latte" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Vanilla Latte</h3>
+                            <p>Vanilya aromalı latte. Günün önerisi!</p>
+                        </div>
+                        <div class="menu-card-price">105₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-mocha.png" alt="Mocha" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Mocha</h3>
+                            <p>Çikolata ve espresso karışımı.</p>
+                        </div>
+                        <div class="menu-card-price">110₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-iced-americano.png" alt="Iced Americano" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Iced Americano</h3>
+                            <p>Soğuk su ve buz üzerine espresso.</p>
+                        </div>
+                        <div class="menu-card-price">90₺</div>
+                    </div>
+                </div>
+
+                <div class="menu-grid" id="tatlilar">
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-cheesecake.png" alt="Cheesecake" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Cheesecake</h3>
+                            <p>Kremsi klasik cheesecake.</p>
+                        </div>
+                        <div class="menu-card-price">120₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-brownie.png" alt="Brownie" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Brownie</h3>
+                            <p>Fudgy çikolatalı brownie.</p>
+                        </div>
+                        <div class="menu-card-price">110₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-croissant.png" alt="Kruvasan" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Kruvasan</h3>
+                            <p>Taze tereyağlı kruvasan.</p>
+                        </div>
+                        <div class="menu-card-price">85₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-cookie.png" alt="Cookie" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Cookie</h3>
+                            <p>Çikolata parçacıklı kurabiye.</p>
+                        </div>
+                        <div class="menu-card-price">75₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-tiramisu.png" alt="Tiramisu" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Tiramisu</h3>
+                            <p>İtalyan usulü tiramisu.</p>
+                        </div>
+                        <div class="menu-card-price">130₺</div>
+                    </div>
+                    <div class="menu-card" data-animate>
+                        <div class="menu-card-img">
+                            <img src="images/menu-donut.png" alt="Donut" loading="lazy">
+                        </div>
+                        <div class="menu-card-info">
+                            <h3>Donut</h3>
+                            <p>Çikolata kaplı donut.</p>
+                        </div>
+                        <div class="menu-card-price">70₺</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HAKKIMIZDA -->
+    <section class="about-section" id="hakkimizda">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-animate>
+                    <img src="images/gallery-interior.png" alt="Aura Cafe iç mekan">
+                </div>
+                <div class="about-content" data-animate>
+                    <span class="section-tag">Hakkımızda</span>
+                    <h2 class="section-title">Aura Cafe</h2>
+                    <p class="about-text">
+                        Aura Cafe, geniş ve ferah bir ortamda kahve ve tatlı servisi sunar.
+                        İster arkadaşlarınla gel, ister tek başına rahatça vakit geçir.
+                    </p>
+                    <p class="about-text">
+                        Şehir merkezinde, kolay ulaşılabilir bir noktada seni bekliyoruz.
+                        Sabahın erken saatlerinden akşama kadar taze kahve ve günlük tatlılarımızla hizmetinizdeyiz.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">m² Alan</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Kahve Çeşidi</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">09:00</span>
+                            <span class="stat-label">Açılış Saati</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERİ -->
+    <section class="gallery-section" id="galeri">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Galeri</span>
+                <h2 class="section-title">Mekanımızdan Kareler</h2>
+                <p class="section-desc">Ferah alanımızdan ve ürünlerimizden görseller.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large" data-animate>
+                    <img src="images/hero.png" alt="Aura Cafe genel görünüm" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Genel Görünüm</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="images/gallery-coffee.png" alt="Aura Cafe kahveler" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Taze Kahveler</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="images/gallery-pastry.png" alt="Aura Cafe tatlılar" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Günlük Tatlılar</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-wide" data-animate>
+                    <img src="images/gallery-drone.png" alt="Aura Cafe üstten görünüm" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Üstten Görünüm</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate>
+                    <img src="images/gallery-interior.png" alt="Aura Cafe oturma alanı" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Oturma Alanı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="contact-section" id="iletisim">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate>
+                    <span class="section-tag">İletişim</span>
+                    <h2 class="section-title">Bir Kahve İçmeye Gel</h2>
+                    <p class="contact-desc">Şehir merkezindeyiz, bulmak kolay. Uğra, otur, kahveni al.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Adres</strong>
+                                <p>Şehir Merkezi, Ana Cadde No: 42</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Çalışma Saatleri</strong>
+                                <p>Her gün 09:00 - 02:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Telefon</strong>
+                                <p>+90 555 123 45 67</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/905551234567?text=Merhaba,%20rezervasyon%20yapmak%20istiyorum."
+                        class="btn btn-whatsapp" id="whatsappBtn" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Rezervasyon Yap
+                    </a>
+                </div>
+
+                <div class="contact-map" data-animate>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.0!2d32.85!3d39.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU1JzEyLjAiTiAzMsKwNTEnMDAuMCJF!5e0!3m2!1str!2str!4v1"
+                        width="100%" height="100%" style="border:0; border-radius: 20px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Aura Cafe Konum">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.jpg" alt="Aura Cafe Logo" class="footer-logo-img">
+                    <span class="logo-text">Aura Cafe</span>
+                </div>
+                <p class="footer-text">Şehir merkezinde, geniş ve ferah ortamıyla sizi bekliyor.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aura Cafe. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
